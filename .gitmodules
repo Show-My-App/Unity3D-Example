@@ -1,0 +1,3 @@
+[submodule "Assets/Sub-Module"]
+	path = Assets/Sub-Module
+	url = https://github.com/show-my-app/Unity3D.git
