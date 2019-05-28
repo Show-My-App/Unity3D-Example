@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/FakeScene.unity
     guid: 6a297c41535984de1aa97edeeadeaffe
   - enabled: 1
-    path: Assets/Sub-Module/Scenes/ShowMyAppScene.unity
+    path: Assets/Sub-Module/Scenes/ShowMyAppScenePanel.unity
     guid: 7319cb06de2d44851947b2cef5c0eafe
   m_configObjects: {}
