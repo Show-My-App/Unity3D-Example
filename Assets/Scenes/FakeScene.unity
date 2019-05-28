@@ -254,7 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.58136004, g: 0.8018868, b: 0.5635902, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -353,6 +353,95 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1604283458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1604283459}
+  - component: {fileID: 1604283462}
+  - component: {fileID: 1604283461}
+  - component: {fileID: 1604283460}
+  m_Layer: 5
+  m_Name: FakeScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1604283459
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604283458}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1918603857}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1604283460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604283458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1254083943, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 4
+  m_AspectRatio: 1.45
+--- !u!114 &1604283461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604283458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: c2f785ef299cf4e34bd12e5db1d8bc88, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 0
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1604283462
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604283458}
+  m_CullTransparentMesh: 0
 --- !u!1 &1698035518
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,6 +712,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1604283459}
   - {fileID: 499849924}
   - {fileID: 538250651}
   - {fileID: 1728992486}
@@ -684,7 +774,7 @@ PrefabInstance:
     - target: {fileID: 297200831895162844, guid: fc671494985b1471d80e9c7ca377b0d1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 297200831895162844, guid: fc671494985b1471d80e9c7ca377b0d1,
         type: 3}
@@ -751,6 +841,36 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 297200831895162843, guid: fc671494985b1471d80e9c7ca377b0d1,
+        type: 3}
+      propertyPath: DesignColor.r
+      value: 0.9150943
+      objectReference: {fileID: 0}
+    - target: {fileID: 297200831895162843, guid: fc671494985b1471d80e9c7ca377b0d1,
+        type: 3}
+      propertyPath: DesignColor.g
+      value: 0.6444787
+      objectReference: {fileID: 0}
+    - target: {fileID: 297200831895162843, guid: fc671494985b1471d80e9c7ca377b0d1,
+        type: 3}
+      propertyPath: DesignColor.b
+      value: 0.15970986
+      objectReference: {fileID: 0}
+    - target: {fileID: 297200831895162843, guid: fc671494985b1471d80e9c7ca377b0d1,
+        type: 3}
+      propertyPath: DesignColorBackground.r
+      value: 0.18867922
+      objectReference: {fileID: 0}
+    - target: {fileID: 297200831895162843, guid: fc671494985b1471d80e9c7ca377b0d1,
+        type: 3}
+      propertyPath: DesignColorBackground.g
+      value: 0.18867922
+      objectReference: {fileID: 0}
+    - target: {fileID: 297200831895162843, guid: fc671494985b1471d80e9c7ca377b0d1,
+        type: 3}
+      propertyPath: DesignColorBackground.b
+      value: 0.18867922
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc671494985b1471d80e9c7ca377b0d1, type: 3}
 --- !u!1001 &3248248564281257371
@@ -803,7 +923,7 @@ PrefabInstance:
     - target: {fileID: 3248248562787973501, guid: 8ab3db312e97e4088b081b3fdc1b9eb0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3248248562787973501, guid: 8ab3db312e97e4088b081b3fdc1b9eb0,
         type: 3}
@@ -869,6 +989,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248248562787973490, guid: 8ab3db312e97e4088b081b3fdc1b9eb0,
+        type: 3}
+      propertyPath: DesignColorBackground.r
+      value: 0.18867922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248248562787973490, guid: 8ab3db312e97e4088b081b3fdc1b9eb0,
+        type: 3}
+      propertyPath: DesignColorBackground.g
+      value: 0.18867922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248248562787973490, guid: 8ab3db312e97e4088b081b3fdc1b9eb0,
+        type: 3}
+      propertyPath: DesignColorBackground.b
+      value: 0.18867922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248248562787973490, guid: 8ab3db312e97e4088b081b3fdc1b9eb0,
+        type: 3}
+      propertyPath: DesignColor.r
+      value: 0.9150943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248248562787973490, guid: 8ab3db312e97e4088b081b3fdc1b9eb0,
+        type: 3}
+      propertyPath: DesignColor.g
+      value: 0.6444787
+      objectReference: {fileID: 0}
+    - target: {fileID: 3248248562787973490, guid: 8ab3db312e97e4088b081b3fdc1b9eb0,
+        type: 3}
+      propertyPath: DesignColor.b
+      value: 0.15970986
       objectReference: {fileID: 0}
     - target: {fileID: 3248248562787973500, guid: 8ab3db312e97e4088b081b3fdc1b9eb0,
         type: 3}
@@ -1088,7 +1238,7 @@ PrefabInstance:
     - target: {fileID: 6724868293091167305, guid: 1e7424aa4b4a94c4888b19824624afa3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6724868293091167305, guid: 1e7424aa4b4a94c4888b19824624afa3,
         type: 3}
